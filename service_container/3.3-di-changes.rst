@@ -369,14 +369,14 @@ The fourth big change is the ``autoconfigure`` key, which is set to ``true`` und
 this file. For example, suppose you want to create an event subscriber. First, you
 create the class::
 
-    // src/EventSubscriber/SetHeaderSusbcriber.php
+    // src/EventSubscriber/SetHeaderSubscriber.php
     // ...
 
     use Symfony\Component\EventDispatcher\EventSubscriberInterface;
     use Symfony\Component\HttpKernel\Event\FilterResponseEvent;
     use Symfony\Component\HttpKernel\KernelEvents;
 
-    class SetHeaderSusbcriber implements EventSubscriberInterface
+    class SetHeaderSubscriber implements EventSubscriberInterface
     {
         public function onKernelResponse(FilterResponseEvent $event)
         {
